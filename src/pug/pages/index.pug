@@ -1,4 +1,4 @@
-extends ../layout/main
+extends ../layout/index
 
 block variables
   - var title = 'webpack template';
@@ -6,13 +6,9 @@ block variables
   - var pageClass = 'index-page';
 
 block content
-  h1 Hello :)
-  a(href='https://github.com/maxnnn1900/webpack-template')
-    img(src='/assets/img/logo.png' alt='webpack template') 
-  .mixins
-    +sample('sample mixin', 'mixin1 description')
-    +sample('sample mixin', 'mixin2 description')
-    +sample('sample mixin', 'mixin3 description')
+  ul
+    li
+      a(href="colors-and-type.html") colors-and-type
   #components 
     example-component
 

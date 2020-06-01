@@ -12,8 +12,11 @@ html(lang='ru')
     block head
 
   body(class=pageClass)
-    +logo-sign()
     .wrapper
-      block content
+      #app
+        include ../includes/modules/header
+        .content-wrapper
+          block content
+        include ../includes/modules/footer
 
     block script

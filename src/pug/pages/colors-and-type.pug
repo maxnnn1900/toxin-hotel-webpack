@@ -1,0 +1,51 @@
+extends ../layout/main
+
+block variables
+  - var title = 'webpack template';
+  - var description = 'webpack template';
+  - var pageClass = 'colors-and-type';
+
+block content
+  ul.color-blocks-list
+    li.color-blocks-list__item
+      +color-type-block('Dark shade 100%', '#1F2041')
+    li.color-blocks-list__item
+      +color-type-block('Dark shade 75%', 'rgba(31, 32, 65, 0.75);')
+    li.color-blocks-list__item
+      +color-type-block('Dark shade 50%', 'rgba(31, 32, 65, 0.5);')
+    li.color-blocks-list__item
+      +color-type-block('Dark shade 25%', 'rgba(31, 32, 65, 0.25);')
+    li.color-blocks-list__item
+      +color-type-block('Dark shade 5%', 'rgba(31, 32, 65, 0.05);')
+    li.color-blocks-list__item
+      +color-type-block('Purple', '#BC9CFF')
+    li.color-blocks-list__item
+      +color-type-block('Green', '#6FCF97')
+
+  ul.text-type-list
+    li.text-type-list__item
+      +color-type-block('Dark shade 100%', '#1F2041')
+    li.text-type-list__item
+      +color-type-block('Dark shade 75%', 'rgba(31, 32, 65, 0.75);')
+    li.text-type-list__item
+      +color-type-block('Dark shade 50%', 'rgba(31, 32, 65, 0.5);')
+    li.text-type-list__item
+      +color-type-block('Dark shade 25%', 'rgba(31, 32, 65, 0.25);')
+    li.text-type-list__item
+      +color-type-block('Dark shade 5%', 'rgba(31, 32, 65, 0.05);')
+    li.text-type-list__item
+      +color-type-block('Purple', '#BC9CFF')
+    li.text-type-list__item
+      +color-type-block('Green', '#6FCF97')
+
+
+
+block script 
+  script(type="text/javascript"). 
+    const foo = true;
+    let bar = function() {};
+    if (foo) {
+      bar(1+5);
+    }
+
+

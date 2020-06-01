@@ -22,3 +22,49 @@ h1{
   font-size: 2.5rem;
   margin: em(8, rem-to-px(2.5rem)) 0;
 }
+
+.color-blocks-list{
+  list-style-type: none;
+  padding: 0;
+  &__item + &__item{
+    margin-top: 1em;
+  }
+}
+
+.text-type-list{
+  list-style-type: none;
+  padding: 0;
+  &__item + &__item{
+    margin-top: 1em;
+  }
+}
+
+
+.color-type{
+  display: flex;
+  align-items: center;
+  &__type{
+    width: 3em;
+    height: 3em;
+    margin-right: 2em;
+    border-radius: 0.5em;
+  }
+  &__title{
+    font-weight: bold;
+  }
+}
+
+.colors-and-type .wrapper{
+  padding: em(140);
+  display: flex;
+}
+
+.colors-and-type .wrapper .text-type-list{
+  margin-left: auto;
+}
+
+.logo-sign{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
